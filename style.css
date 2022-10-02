@@ -3,3 +3,106 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("images/gameboyOriginalEdited.jpg");
+  
+    /* Full height */
+
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 700px;
+    width: 450px;
+    margin: 20px auto;
+
+    position: relative;
+  } 
+
+  .red-button1{
+    position: absolute;
+    top: 470px;
+    left: 300px;
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+  }
+
+  .red-button2{
+    position: absolute;
+    top: 440px;
+    left: 370px;
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+  }
+
+  .arrow-button1{
+    position: absolute;
+    top: 460px;
+    left: 125px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+  }
+
+  .arrow-button2{
+    position: absolute;
+    top: 460px;
+    left: 50px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+  }
+  
+  .arrow-button3{
+    position: absolute;
+    top: 430px;
+    left: 90px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+  }
+  
+  .arrow-button4{
+    position: absolute;
+    top: 500px;
+    left: 90px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+  }
+
+  .grey-button1{
+    position: absolute;
+    top: 570px;
+    left: 150px;
+    height: 20px;
+    width: 20px;
+    background-color: greenyellow;
+  }
+
+  .grey-button2{
+    position: absolute;
+    top: 570px;
+    left: 230px;
+    height: 20px;
+    width: 20px;
+    background-color: greenyellow;
+  }
+
+  #selectbtn, #startbtn{
+    position: absolute;
+    background-color: #D9D9D9;
+    padding: 5px 20px;
+    border-radius: 25px 30px;
+    transform: rotate(-45deg);
+  }
