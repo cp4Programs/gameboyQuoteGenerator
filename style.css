@@ -16,17 +16,14 @@ footer {
   background-color: #c4c4c4;
 }
 
-.screen {
-  background-color: #A9D899;
-  height: 200px;
-  width: 221px;
-  position: absolute;
-  z-index: 1;
-  top: 197px;
-  left: 102px;
+
+
+.background {
+  background-image: url("images/gameboy\ games.webp");
+  z-index: -1;
 }
 
-.bg {
+.gameboy {
   /* The image used */
   background-image: url("images/gameboyOriginalEdited.jpg");
   background-position: center;
@@ -34,6 +31,16 @@ footer {
   height: 700px;
   width: 427px;
   position: relative;
+}
+
+.screen {
+  background-color: #A9D899;
+  height: 200px;
+  width: 221px;
+  position: absolute;
+  z-index: 1;
+  top: 96px;
+  left: 102px;
 }
 
 .red-button1 {
@@ -114,3 +121,153 @@ footer {
   background-color: greenyellow;
 
 }
+
+/* small tablets */
+@media (min-width:481px) {
+  .gameboy {
+    background-image: url("images/gameboyColor.jpg");
+  }
+
+  .screen {
+    height: 194px;
+    width: 221px;
+    top: 70px;
+    left: 104px;
+  }
+
+  .red-button1 {
+    top: 432px;
+    left: 258px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .red-button2 {
+    top: 410px;
+    left: 329px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .arrow-button1 {
+    top: 429px;
+    left: 135px;
+    height: 33px;
+    width: 34px;
+  }
+
+  .arrow-button2 {
+    top: 429px;
+    left: 68px;
+    height: 33px;
+    width: 34px;
+  }
+
+  .arrow-button3 {
+    top: 397px;
+    left: 102px;
+    height: 33px;
+    width: 34px;
+  }
+
+  .arrow-button4 {
+    height: 33px;
+    width: 34px;
+    top: 462px;
+    left: 101px;
+  }
+
+  .grey-button1 {
+    top: 563px;
+    left: 174px;
+    height: 17px;
+    width: 41px;
+    transform: rotate(0deg);
+  }
+
+  .grey-button2 {
+    top: 563px;
+    left: 233px;
+    height: 17px;
+    width: 41px;
+    transform: rotate(0deg);
+  }
+}
+
+/* laptops, larger tablets */
+@media (min-width:770px) {
+  .gameboy {
+    background-image: url("images/GameBoy\ Advanced2.png");
+    height: 652px;
+    width: 855px;
+  }
+
+  .screen {
+    height: 234px;
+    width: 357px;
+    top: 193px;
+    left: 248px;
+    border-radius: 16px;
+  }
+
+  .arrow-button1 {
+    top: 276px;
+    left: 125px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .arrow-button2 {
+    top: 277px;
+    left: 48px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .arrow-button3 {
+    top: 236px;
+    left: 87px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .arrow-button4 {
+    height: 40px;
+    width: 40px;
+    top: 316px;
+    left: 86px;
+  }
+
+  .red-button1 {
+    top: 280px;
+    left: 671px;
+    height: 53px;
+    width: 53px;
+  }
+
+  .red-button2 {
+    top: 257px;
+    left: 751px;
+    height: 53px;
+    width: 53px;
+  }
+
+  .grey-button1 {
+    top: 396px;
+    left: 159px;
+    height: 22px;
+    width: 22px;
+    transform: rotate(0deg);
+  }
+
+  .grey-button2 {
+    top: 445px;
+    left: 157px;
+    height: 22px;
+    width: 22px;
+    transform: rotate(0deg);
+  }
+
+}
+
+/* desktop */
