@@ -1,101 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-  }
-  
-  .bg {
-    /* The image used */
-    background-image: url("images/gameboyOriginalEdited.jpg");
-  
-    /* Full height */
+body,
+html {
+  height: 100%;
+}
 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+nav,
+footer {
+  height: 101px;
+  width: 100%;
+  background-color: #c4c4c4;
+}
 
-    height: 700px;
-    width: 450px;
-    margin: 20px auto;
+.screen {
+  background-color: #A9D899;
+  height: 200px;
+  width: 221px;
+  position: absolute;
+  z-index: 1;
+  top: 197px;
+  left: 102px;
+}
 
-    position: relative;
-  } 
+.bg {
+  /* The image used */
+  background-image: url("images/gameboyOriginalEdited.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 427px;
+  position: relative;
+}
 
-  .red-button1{
-    position: absolute;
-    top: 470px;
-    left: 300px;
-    height: 20px;
-    width: 20px;
-    background-color: pink;
-  }
+.red-button1 {
+  position: absolute;
+  top: 452px;
+  left: 268px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: pink;
+}
 
-  .red-button2{
-    position: absolute;
-    top: 440px;
-    left: 370px;
-    height: 20px;
-    width: 20px;
-    background-color: pink;
-  }
+.red-button2 {
+  position: absolute;
+  top: 421px;
+  left: 336px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: pink;
+}
 
-  .arrow-button1{
-    position: absolute;
-    top: 460px;
-    left: 125px;
-    height: 20px;
-    width: 20px;
-    background-color: blue;
-  }
+.arrow-button1 {
+  position: absolute;
+  top: 452px;
+  left: 108px;
+  height: 36px;
+  width: 35px;
+  background-color: blue;
+}
 
-  .arrow-button2{
-    position: absolute;
-    top: 460px;
-    left: 50px;
-    height: 20px;
-    width: 20px;
-    background-color: blue;
-  }
-  
-  .arrow-button3{
-    position: absolute;
-    top: 430px;
-    left: 90px;
-    height: 20px;
-    width: 20px;
-    background-color: blue;
-  }
-  
-  .arrow-button4{
-    position: absolute;
-    top: 500px;
-    left: 90px;
-    height: 20px;
-    width: 20px;
-    background-color: blue;
-  }
+.arrow-button2 {
+  position: absolute;
+  top: 452px;
+  left: 38px;
+  height: 36px;
+  width: 35px;
+  background-color: blue;
+}
 
-  .grey-button1{
-    position: absolute;
-    top: 570px;
-    left: 150px;
-    height: 20px;
-    width: 20px;
-    background-color: greenyellow;
-  }
+.arrow-button3 {
+  position: absolute;
+  top: 418px;
+  left: 73px;
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+}
 
-  .grey-button2{
-    position: absolute;
-    top: 570px;
-    left: 230px;
-    height: 20px;
-    width: 20px;
-    background-color: greenyellow;
+.arrow-button4 {
+  position: absolute;
+  top: 488px;
+  left: 73px;
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+}
 
-  }
+.grey-button1 {
+  position: absolute;
+  top: 559px;
+  left: 124px;
+  height: 23px;
+  width: 61px;
+  transform: rotate(-26deg);
+  border-radius: 20px;
+  background-color: greenyellow;
+}
+
+.grey-button2 {
+  position: absolute;
+  top: 560px;
+  left: 195px;
+  height: 23px;
+  width: 62px;
+  transform: rotate(-26deg);
+  border-radius: 20px;
+  background-color: greenyellow;
+
+}
