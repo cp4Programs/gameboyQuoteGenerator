@@ -138,7 +138,7 @@ footer {
 /* small tablets */
 @media (min-width:481px) {
   .gameboy {
-    background-image: url("images/gameboyColor.jpg");
+    background-image: url("images/greengameboycolor.png");
   }
 
   .screen {
@@ -149,58 +149,58 @@ footer {
   }
 
   .red-button1 {
-    top: 432px;
-    left: 258px;
+    top: 446px;
+    left: 262px;
     height: 50px;
     width: 50px;
   }
 
   .red-button2 {
-    top: 410px;
-    left: 329px;
+    top: 421px;
+    left: 337px;
     height: 50px;
     width: 50px;
   }
 
   .arrow-button1 {
-    top: 429px;
-    left: 135px;
-    height: 33px;
-    width: 34px;
+    top: 443px;
+    left: 113px;
+    height: 35px;
+    width: 35px;
   }
 
   .arrow-button2 {
-    top: 429px;
-    left: 68px;
-    height: 33px;
-    width: 34px;
+    top: 443px;
+    left: 43px;
+    height: 35px;
+    width: 35px;
   }
 
   .arrow-button3 {
-    top: 397px;
-    left: 102px;
-    height: 33px;
-    width: 34px;
+    top: 409px;
+    left: 78px;
+    height: 35px;
+    width: 35px;
   }
 
   .arrow-button4 {
-    height: 33px;
-    width: 34px;
-    top: 462px;
-    left: 101px;
+    height: 35px;
+    width: 35px;
+    top: 479px;
+    left: 78px;
   }
 
   .grey-button1 {
-    top: 563px;
-    left: 174px;
+    top: 572px;
+    left: 166px;
     height: 17px;
     width: 41px;
     transform: rotate(0deg);
   }
 
   .grey-button2 {
-    top: 563px;
-    left: 233px;
+    top: 572px;
+    left: 226px;
     height: 17px;
     width: 41px;
     transform: rotate(0deg);
