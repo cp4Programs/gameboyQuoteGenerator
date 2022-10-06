@@ -11,16 +11,23 @@ html {
 
 nav,
 footer {
-  height: 101px;
   width: 100%;
   background-color: #c4c4c4;
 }
 
-
+.grid-container {
+  display: grid;
+  grid-template-rows: 70px 100% 70px;
+}
 
 .background {
   background-image: url("images/gameboy\ games.webp");
+  position: absolute;
+  height: 100%;
+  min-width: 428px;
+  width: 100%;
   z-index: -1;
+  opacity: 50%;
 }
 
 .gameboy {
@@ -31,6 +38,7 @@ footer {
   height: 700px;
   width: 427px;
   position: relative;
+  margin: 0 auto;
 }
 
 .screen {
@@ -195,7 +203,7 @@ footer {
 }
 
 /* laptops, larger tablets */
-@media (min-width:770px) {
+@media (min-width:855px) {
   .gameboy {
     background-image: url("images/GameBoy\ Advanced2.png");
     height: 652px;
