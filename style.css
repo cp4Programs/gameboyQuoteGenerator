@@ -49,7 +49,12 @@ footer {
   z-index: 1;
   top: 96px;
   left: 102px;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .red-button1 {
   position: absolute;
