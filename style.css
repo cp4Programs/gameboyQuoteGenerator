@@ -13,6 +13,7 @@ nav,
 footer {
   width: 100%;
   background-color: #c4c4c4;
+  z-index: 1;
 }
 
 .grid-container {
@@ -51,10 +52,14 @@ footer {
   left: 102px;
   font-family: 'Press Start 2P', cursive;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.btn:hover {
+  background-color: antiquewhite;
+}
 
 .red-button1 {
   position: absolute;
@@ -63,8 +68,9 @@ footer {
   height: 55px;
   width: 55px;
   border-radius: 50%;
-  background-color: pink;
+  background-color: transparent;
 }
+
 
 .red-button2 {
   position: absolute;
@@ -73,7 +79,7 @@ footer {
   height: 55px;
   width: 55px;
   border-radius: 50%;
-  background-color: pink;
+  background-color: transparent;
 }
 
 .arrow-button1 {
@@ -82,7 +88,7 @@ footer {
   left: 108px;
   height: 36px;
   width: 35px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .arrow-button2 {
@@ -91,7 +97,7 @@ footer {
   left: 38px;
   height: 36px;
   width: 35px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .arrow-button3 {
@@ -100,7 +106,7 @@ footer {
   left: 73px;
   height: 35px;
   width: 35px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .arrow-button4 {
@@ -109,7 +115,7 @@ footer {
   left: 73px;
   height: 35px;
   width: 35px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .grey-button1 {
@@ -120,7 +126,7 @@ footer {
   width: 61px;
   transform: rotate(-26deg);
   border-radius: 20px;
-  background-color: greenyellow;
+  background-color: transparent;
 }
 
 .grey-button2 {
@@ -131,7 +137,7 @@ footer {
   width: 62px;
   transform: rotate(-26deg);
   border-radius: 20px;
-  background-color: greenyellow;
+  background-color: transparent;
 
 }
 
@@ -142,10 +148,10 @@ footer {
   }
 
   .screen {
-    height: 194px;
-    width: 221px;
-    top: 70px;
-    left: 104px;
+    height: 210px;
+    width: 232px;
+    top: 57px;
+    left: 98px;
   }
 
   .red-button1 {
