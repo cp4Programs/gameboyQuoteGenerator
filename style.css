@@ -47,15 +47,17 @@ footer {
   height: 200px;
   width: 221px;
   position: absolute;
-  z-index: 1;
   top: 96px;
   left: 102px;
   font-family: 'Press Start 2P', cursive;
+  font-size: small;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 8px;
 }
+
 
 .btn:hover {
   background-color: antiquewhite;
