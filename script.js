@@ -53,6 +53,39 @@ previousQuote.addEventListener("click", () => {
     }
 })
 
+
 clearList.addEventListener("click", () => {
     console.log(quoteList, authorList, currentIndex);
 })
+
+
+
+
+
+const screen = document.querySelector(".screen")
+let colorIndex = 0
+const colors = ["lightblue", "red", "purple"]
+function changebg () {
+    screen.style.backgroundColor = colors[colorIndex];
+    if (colorIndex === colors.length -1){
+        colorIndex = 0
+    } else {
+        colorIndex++
+    }
+}
+
+
+
+let fontIndex = 0
+const fonts = [`'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif`,
+'Franklin Gothic Medium', `'Arial Narrow'`]
+function changefont () {
+    screen.style.fontFamily = fonts[fontIndex];
+    if (fontIndex === fonts.length -1){
+        fontIndex = 0
+    } else {
+        fontIndex++
+    }
+}
+
+
