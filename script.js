@@ -79,7 +79,7 @@ changeImg.addEventListener("click", () => {
     console.log(quoteList, authorList, currentIndex);
     image.setAttribute("src", allImages[imageNumber]);
     if (imageNumber === allImages.length - 1) {
-        imageNumber = 0;
+        imageNumber = -1;
     }
     imageNumber++;
 })
@@ -103,7 +103,7 @@ const colors = ["lightblue", "orange", "purple", "lightgreen", "pink", "yellow"]
 function changebg() {
     screen.style.backgroundColor = colors[colorIndex];
     if (colorIndex === colors.length - 1) {
-        colorIndex = 0
+        colorIndex = -1
     } else {
         colorIndex++
     }
@@ -117,7 +117,7 @@ const fonts = [`'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 function changefont() {
     screen.style.fontFamily = fonts[fontIndex];
     if (fontIndex === fonts.length - 1) {
-        fontIndex = 0
+        fontIndex = -1
     } else {
         fontIndex++
     }
