@@ -2,14 +2,25 @@ const quoteButton = document.querySelector(".arrow-button1");
 const previousQuote = document.querySelector(".arrow-button2");
 const content = document.querySelector("#content");
 const author = document.querySelector("#author");
-const clearCredits = document.querySelector(".grey-button1")
+const changeImg = document.querySelector(".grey-button1")
 const credits = document.querySelector(".grey-button2")
 const quoteList = [];
 const authorList = [];
 let currentQuote = content.innerText;
 let currentAuthor = author.innerText;
 let currentIndex = 0;
-let teamMembers = ['Elif Balci', 'Ahmed - Nur Ibrahim', 'Liam Bennet', 'Alex Ngan', 'Carlo Perito']
+let teamMembers = ['Elif Balci', 'Ahmed - Nur Ibrahim', 'Liam Bennet', 'Alex Ngan', 'Carlo Perito'];
+
+let allImages = [
+    "images/MimoImg.png",
+    "images/link.jpeg",
+    "images/Mario.webp",
+    "images/Eve.jpeg",
+    "images/bomberman.jpeg"
+]
+let imageNumber = 0;
+
+
 
 
 quoteButton.addEventListener("click", () => {
@@ -60,22 +71,33 @@ previousQuote.addEventListener("click", () => {
 })
 
 
-clearList.addEventListener("click", () => {
+changeImg.addEventListener("click", () => {
+    content.innerText = "";
+    author.innerText = "";
     console.log(quoteList, authorList, currentIndex);
+    let image = document.querySelector("#image");
+    image.setAttribute("src", allImages[imageNumber]);
+    if (imageNumber === allImages.length - 1) {
+        imageNumber = 0;
+    }
+    imageNumber++;
 })
+
 credits.addEventListener("click", () => {
-    content.innerText = "Team Members"
-    author.innerText = "Elif Balci Ahmed-Nur Ibrahim Liam Bennet Alex Ngan Carlo Perito";
-
+    content.innerText = "Credits";
+    author.innerText = "Team Members";
+    teamMembers.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        author.appendChild(li);
+    })
 })
-
-
 
 
 
 const screen = document.querySelector(".screen")
 let colorIndex = 0
-const colors = ["lightblue", "red", "purple"]
+const colors = ["lightblue", "orange", "purple", "lightgreen", "pink", "yellow"]
 function changebg() {
     screen.style.backgroundColor = colors[colorIndex];
     if (colorIndex === colors.length - 1) {
@@ -99,4 +121,13 @@ function changefont() {
     }
 }
 
+
+
+function fontsizeup() {
+    screen.style.fontSize = "17px"
+}
+
+function fontsizedown() {
+    screen.style.fontSize = "10px"
+}
 
