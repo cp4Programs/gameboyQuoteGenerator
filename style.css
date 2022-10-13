@@ -69,8 +69,20 @@ footer {
 }
 
 
-.btn:hover {
-  background-color: antiquewhite;
+
+.btn {}
+
+.tooltip {
+  background-color: greenyellow;
+  color: white;
+  visibility: hidden;
+  margin-top: -40px;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.btn:hover.tooltip {
+  visibility: visible;
 }
 
 .red-button1 {
