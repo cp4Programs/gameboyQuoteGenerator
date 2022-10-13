@@ -64,7 +64,7 @@ clearList.addEventListener("click", () => {
 
 const screen = document.querySelector(".screen")
 let colorIndex = 0
-const colors = ["lightblue", "red", "purple"]
+const colors = ["lightblue", "orange", "purple", "lightgreen", "pink", "yellow"]
 function changebg () {
     screen.style.backgroundColor = colors[colorIndex];
     if (colorIndex === colors.length -1){
@@ -88,4 +88,13 @@ function changefont () {
     }
 }
 
+
+
+function fontsizeup (){
+    screen.style.fontSize = "17px"
+}
+
+function fontsizedown(){
+    screen.style.fontSize = "10px"
+}
 
