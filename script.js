@@ -10,7 +10,7 @@ let currentQuote = content.innerText;
 let currentAuthor = author.innerText;
 let currentIndex = 0;
 let teamMembers = ['Elif Balci', 'Ahmed - Nur Ibrahim', 'Liam Bennet', 'Alex Ngan', 'Carlo Perito'];
-
+let image = document.querySelector("#image");
 let allImages = [
     "images/MimoImg.png",
     "images/link.jpeg",
@@ -24,6 +24,7 @@ let imageNumber = 0;
 
 
 quoteButton.addEventListener("click", () => {
+    image.setAttribute("src", "");
     const index = Math.floor(Math.random() * 10)
     const page = Math.floor(Math.random() * 7268)
     fetch(`https://quote-garden.herokuapp.com/api/v3/quotes?page=${page}`)
@@ -55,6 +56,7 @@ quoteButton.addEventListener("click", () => {
 })
 
 previousQuote.addEventListener("click", () => {
+    image.setAttribute("src", "");
     if (currentIndex === 0) {
         return;
     } else if (currentIndex === quoteList.length) {
@@ -75,7 +77,6 @@ changeImg.addEventListener("click", () => {
     content.innerText = "";
     author.innerText = "";
     console.log(quoteList, authorList, currentIndex);
-    let image = document.querySelector("#image");
     image.setAttribute("src", allImages[imageNumber]);
     if (imageNumber === allImages.length - 1) {
         imageNumber = 0;
@@ -84,6 +85,7 @@ changeImg.addEventListener("click", () => {
 })
 
 credits.addEventListener("click", () => {
+    image.setAttribute("src", "");
     content.innerText = "Credits";
     author.innerText = "Team Members";
     teamMembers.forEach((item) => {
