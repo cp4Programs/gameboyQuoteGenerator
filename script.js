@@ -28,48 +28,72 @@ let imageNumber = 0;
 
 quoteButton.addEventListener("mouseover", () => {
     preview.innerText = "Next Quote";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 quoteButton.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 previousQuote.addEventListener("mouseover", () => {
     preview.innerText = "Previous Quote";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 previousQuote.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 changeBgColor.addEventListener("mouseover", () => {
     preview.innerText = "Change Background Color";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 changeBgColor.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 changeFontFamily.addEventListener("mouseover", () => {
     preview.innerText = "Change Font Family";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 changeFontFamily.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 changeImg.addEventListener("mouseover", () => {
     preview.innerText = "Images";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 changeImg.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 credits.addEventListener("mouseover", () => {
     preview.innerText = "Credits";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 credits.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 bButton.addEventListener("mouseover", () => {
     preview.innerText = "Decrease Font Size";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 bButton.addEventListener("mouseout", () => {
     preview.innerText = "";
 })
 aButton.addEventListener("mouseover", () => {
     preview.innerText = "Increase Font Size";
+    setTimeout(() => {
+        preview.innerText = "";
+    }, 1750);
 })
 aButton.addEventListener("mouseout", () => {
     preview.innerText = "";
@@ -175,13 +199,24 @@ function changefont() {
     }
 }
 
-
+const fontSizeList = ["10px", "14px", "18px", "22px"];
+let fontSizeIndex = 0
 
 function fontSizeUp() {
-    screen.style.fontSize = "17px"
+    if (fontSizeIndex === fontSizeList.length - 1) {
+        return;
+    } else {
+        fontSizeIndex++;
+    }
+    screen.style.fontSize = fontSizeList[fontSizeIndex];
 }
 
 function fontSizeDown() {
-    screen.style.fontSize = "10px"
+    if (fontSizeIndex === 0) {
+        return;
+    } else {
+        fontSizeIndex--;
+    }
+    screen.style.fontSize = fontSizeList[fontSizeIndex];
 }
 
