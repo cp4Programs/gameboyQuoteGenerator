@@ -70,22 +70,18 @@ footer {
 
 
 
-.btn {}
-
-.tooltip {
+.btn:hover {
   background-color: greenyellow;
-  color: white;
-  visibility: hidden;
-  margin-top: -40px;
-  font-size: 12px;
-  visibility: hidden;
 }
 
-.btn:hover.tooltip {
-  visibility: visible;
+
+#preview {
+  color: #ffffff;
+  border: 1px light #ffffff;
 }
 
-.red-button1 {
+
+.red-buttonB {
   position: absolute;
   top: 452px;
   left: 268px;
@@ -96,7 +92,7 @@ footer {
 }
 
 
-.red-button2 {
+.red-buttonA {
   position: absolute;
   top: 421px;
   left: 336px;
@@ -106,7 +102,7 @@ footer {
   background-color: transparent;
 }
 
-.arrow-button1 {
+.right-arrow-button {
   position: absolute;
   top: 452px;
   left: 108px;
@@ -115,7 +111,7 @@ footer {
   background-color: transparent;
 }
 
-.arrow-button2 {
+.left-arrow-button {
   position: absolute;
   top: 452px;
   left: 38px;
@@ -124,7 +120,7 @@ footer {
   background-color: transparent;
 }
 
-.arrow-button3 {
+.up-arrow-button {
   position: absolute;
   top: 418px;
   left: 73px;
@@ -133,7 +129,7 @@ footer {
   background-color: transparent;
 }
 
-.arrow-button4 {
+.down-arrow-button {
   position: absolute;
   top: 488px;
   left: 73px;
@@ -142,7 +138,7 @@ footer {
   background-color: transparent;
 }
 
-.grey-button1 {
+.select-grey-button {
   position: absolute;
   top: 559px;
   left: 124px;
@@ -153,7 +149,7 @@ footer {
   background-color: transparent;
 }
 
-.grey-button2 {
+.start-grey-button {
   position: absolute;
   top: 560px;
   left: 195px;
@@ -178,49 +174,49 @@ footer {
     left: 98px;
   }
 
-  .red-button1 {
+  .red-buttonB {
     top: 446px;
     left: 262px;
     height: 50px;
     width: 50px;
   }
 
-  .red-button2 {
+  .red-buttonA {
     top: 421px;
     left: 337px;
     height: 50px;
     width: 50px;
   }
 
-  .arrow-button1 {
+  .right-arrow-button {
     top: 443px;
     left: 113px;
     height: 35px;
     width: 35px;
   }
 
-  .arrow-button2 {
+  .left-arrow-button {
     top: 443px;
     left: 43px;
     height: 35px;
     width: 35px;
   }
 
-  .arrow-button3 {
+  .up-arrow-button {
     top: 409px;
     left: 78px;
     height: 35px;
     width: 35px;
   }
 
-  .arrow-button4 {
+  .down-arrow-button {
     height: 35px;
     width: 35px;
     top: 479px;
     left: 78px;
   }
 
-  .grey-button1 {
+  .select-grey-button {
     top: 572px;
     left: 166px;
     height: 17px;
@@ -228,7 +224,7 @@ footer {
     transform: rotate(0deg);
   }
 
-  .grey-button2 {
+  .start-grey-button {
     top: 572px;
     left: 226px;
     height: 17px;
@@ -253,49 +249,49 @@ footer {
     border-radius: 16px;
   }
 
-  .arrow-button1 {
+  .right-arrow-button {
     top: 276px;
     left: 125px;
     height: 40px;
     width: 40px;
   }
 
-  .arrow-button2 {
+  .left-arrow-button {
     top: 277px;
     left: 48px;
     height: 40px;
     width: 40px;
   }
 
-  .arrow-button3 {
+  .up-arrow-button {
     top: 236px;
     left: 87px;
     height: 40px;
     width: 40px;
   }
 
-  .arrow-button4 {
+  .down-arrow-button {
     height: 40px;
     width: 40px;
     top: 316px;
     left: 86px;
   }
 
-  .red-button1 {
+  .red-buttonB {
     top: 280px;
     left: 671px;
     height: 53px;
     width: 53px;
   }
 
-  .red-button2 {
+  .red-buttonA {
     top: 257px;
     left: 751px;
     height: 53px;
     width: 53px;
   }
 
-  .grey-button1 {
+  .select-grey-button {
     top: 396px;
     left: 159px;
     height: 22px;
@@ -303,7 +299,7 @@ footer {
     transform: rotate(0deg);
   }
 
-  .grey-button2 {
+  .start-grey-button {
     top: 445px;
     left: 157px;
     height: 22px;

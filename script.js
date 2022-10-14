@@ -1,13 +1,19 @@
-const quoteButton = document.querySelector(".arrow-button1");
-const previousQuote = document.querySelector(".arrow-button2");
+const quoteButton = document.querySelector(".right-arrow-button");
+const previousQuote = document.querySelector(".left-arrow-button");
+const changeBgColor = document.querySelector(".up-arrow-button");
+const changeFontFamily = document.querySelector(".down-arrow-button");
+const changeImg = document.querySelector(".select-grey-button");
+const credits = document.querySelector(".start-grey-button");
+const bButton = document.querySelector(".red-buttonB")
+const aButton = document.querySelector(".red-buttonA")
 const content = document.querySelector("#content");
 const author = document.querySelector("#author");
-const changeImg = document.querySelector(".grey-button1")
-const credits = document.querySelector(".grey-button2")
+const preview = document.querySelector("#preview");
 const quoteList = [];
 const authorList = [];
 let currentQuote = content.innerText;
 let currentAuthor = author.innerText;
+let btnPreview = preview.innerText;
 let currentIndex = 0;
 let teamMembers = ['Elif Balci', 'Ahmed - Nur Ibrahim', 'Liam Bennet', 'Alex Ngan', 'Carlo Perito'];
 let image = document.querySelector("#image");
@@ -20,8 +26,54 @@ let allImages = [
 ]
 let imageNumber = 0;
 
-
-
+quoteButton.addEventListener("mouseover", () => {
+    preview.innerText = "Next Quote";
+})
+quoteButton.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+previousQuote.addEventListener("mouseover", () => {
+    preview.innerText = "Previous Quote";
+})
+previousQuote.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+changeBgColor.addEventListener("mouseover", () => {
+    preview.innerText = "Change Background Color";
+})
+changeBgColor.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+changeFontFamily.addEventListener("mouseover", () => {
+    preview.innerText = "Change Font Family";
+})
+changeFontFamily.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+changeImg.addEventListener("mouseover", () => {
+    preview.innerText = "Images";
+})
+changeImg.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+credits.addEventListener("mouseover", () => {
+    preview.innerText = "Credits";
+})
+credits.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+bButton.addEventListener("mouseover", () => {
+    preview.innerText = "Decrease Font Size";
+})
+bButton.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
+aButton.addEventListener("mouseover", () => {
+    preview.innerText = "Increase Font Size";
+})
+aButton.addEventListener("mouseout", () => {
+    preview.innerText = "";
+})
 
 quoteButton.addEventListener("click", () => {
     image.setAttribute("src", "");
@@ -125,11 +177,11 @@ function changefont() {
 
 
 
-function fontsizeup() {
+function fontSizeUp() {
     screen.style.fontSize = "17px"
 }
 
-function fontsizedown() {
+function fontSizeDown() {
     screen.style.fontSize = "10px"
 }
 
